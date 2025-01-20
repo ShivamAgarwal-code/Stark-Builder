@@ -1,6 +1,8 @@
 /* eslint-disable unicorn/prevent-abbreviations */
 /* eslint-disable indent */
 
+"use client";
+
 import * as React from 'react';
 
 import type { ToastActionElement, ToastProps } from '@/components/ui/toast/toast';
