@@ -12,7 +12,7 @@ export const auditJsonSchema = z.object({
         description: z.string().describe('Detailed description of the issue'),
       }),
     )
-    .describe('List of issues found in the smart contract'),
+    .describe('List of issues found in the smart contract:'),
 });
 
 export function auditorAgent() {
