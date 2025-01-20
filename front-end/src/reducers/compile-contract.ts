@@ -21,6 +21,7 @@ function compileContractReducer(state: TCompileContractState, action: ICompileCo
     case EReducerState.start: {
       return {
         isLoading: true,
+        isReady: false,
         isError: false,
         isSuccess: false,
         artifact: null
