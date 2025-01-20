@@ -17,7 +17,7 @@ export class LlmService {
       console.log('Error connecting to the DB', error);
     });
   }
-
+// here is the private trimCode function
   private trimCode(code: string) {
     const codeMatch = new RegExp(`\`\`\`rust([\\s\\S]*?)\`\`\``, 'g').exec(code);
     return codeMatch ? codeMatch[1].trim() : code;
