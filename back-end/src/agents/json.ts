@@ -10,6 +10,8 @@ export function jsonAgent(modelName: string, schema: ZodSchema) {
     temperature: 0,
     modelKwargs: { seed: 1337 },
   });
+
+  // core functionality functions
   const functionCallingModel = llm.bind({
     functions: [
       {
